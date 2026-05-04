@@ -355,23 +355,49 @@ nav {
 /* ── DISCLAIMER ── */
 #disclaimer {
   background-color: #050505;
-  padding: 32px 24px;
-  border-top: 1px solid rgba(201,168,76,0.1);
+  padding: 48px 24px;
+  border-top: 1px solid rgba(201,168,76,0.15);
 }
 #disclaimer .inner {
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto;
-  text-align: center;
 }
 #disclaimer .section-label { margin-bottom: 12px; }
-#disclaimer p {
-  font-size: 11px;
-  line-height: 1.8;
-  color: rgba(245,240,232,0.35);
-  margin-bottom: 10px;
+.disclaimer-block {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background-color: #0f0f0f;
+  border: 1px solid rgba(201,168,76,0.12);
+  border-radius: 4px;
+  padding: 20px 18px;
+  margin-bottom: 12px;
 }
-#disclaimer p strong { color: rgba(245,240,232,0.5); }
-#disclaimer p em { color: rgba(201,168,76,0.45); font-style: italic; }
+.disclaimer-icon {
+  font-size: 22px;
+  min-width: 32px;
+  margin-top: 2px;
+}
+.disclaimer-block strong {
+  display: block;
+  font-size: 13px;
+  color: #c9a84c;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  font-family: Arial, sans-serif;
+}
+.disclaimer-block p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: rgba(245,240,232,0.45);
+}
+.disclaimer-block p strong {
+  display: inline;
+  color: rgba(245,240,232,0.65);
+  font-size: 12px;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
 
 /* ── FOOTER ── */
 footer {
@@ -593,10 +619,43 @@ footer {
 
   <section id="disclaimer">
     <div class="inner">
-      <div class="section-label">A Note on Integrity</div>
-      <p>All services, content, and resources provided by Baller AI Systems are for <strong>educational and informational purposes.</strong> Results will vary based on individual effort, business type, and implementation. Nothing shared constitutes financial, legal, or professional advice.</p>
-      <p>TElaine and Baller AI Systems are committed to transparency — because integrity isn't just a value. <em>It's the foundation.</em></p>
+      <div class="section-label">Transparency &amp; Integrity Notice</div>
+
+```
+  <p style="font-size:13px;color:rgba(201,168,76,0.65);margin-bottom:20px;font-style:italic;text-align:center;">
+    At Baller AI Systems, transparency is the foundation — not an afterthought.
+  </p>
+
+  <div class="disclaimer-block">
+    <div class="disclaimer-icon">🤖</div>
+    <div>
+      <strong>AI-Assisted Content</strong>
+      <p>Some content, tools, and materials provided by Baller AI Systems are generated or assisted by AI technologies (including ChatGPT, Claude, Gemini, and Canva AI). AI can and does make mistakes — outputs may be inaccurate, incomplete, or outdated. <strong>Human review is always recommended</strong> before implementing any AI-generated content in your business.</p>
     </div>
+  </div>
+
+  <div class="disclaimer-block">
+    <div class="disclaimer-icon">📋</div>
+    <div>
+      <strong>Educational Purposes Only &amp; Not Professional Advice</strong>
+      <p>All services, sessions, and resources are for <strong>educational and informational purposes only.</strong> Nothing here constitutes legal, financial, medical, or other licensed professional advice. Always consult a qualified professional for decisions specific to your situation. <strong>Independently verify</strong> all important information before acting on it.</p>
+    </div>
+  </div>
+
+  <div class="disclaimer-block">
+    <div class="disclaimer-icon">🛡️</div>
+    <div>
+      <strong>Limitation of Liability</strong>
+      <p>Baller AI Systems and TElaine are not liable for any errors, omissions, losses, or damages arising from use of or reliance on any content or services provided — whether AI-generated or otherwise. Individual results will vary. No specific outcomes are guaranteed or implied.</p>
+    </div>
+  </div>
+
+  <p style="font-size:11px;color:rgba(201,168,76,0.4);margin-top:20px;font-style:italic;text-align:center;">
+    Working with AI means building smarter — with honesty about both its power and its limitations. © 2026 Baller AI Systems.
+  </p>
+</div>
+```
+
   </section>
 
   <!-- FOOTER -->
